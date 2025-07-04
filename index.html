@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+       box-sizing: border-box; 
+
+    }
+
+    body{
+        background-image: url(img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        font-size: larger;
+        margin: 20px;
+        user-select: none;
+    }
+
+    .icon{
+        font-size: 45px;
+        color: rgb(246, 176, 46);
+        margin-top: 20px;
+    }
+
+    nav ul{
+        display: flex;
+        gap: 80px;
+        margin-top: 25px;
+    }
+
+    ul li{
+        list-style-type: none;
+    }
+    
+    li a{
+        text-decoration: none;
+        color: rgb(229, 218, 218);
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+    li a:hover{
+        text-decoration: underline;
+        color: rgb(246, 176, 46);
+    }
+    
+    input{
+        font-size: 25px;
+        padding:0px 10px;
+        border-radius: 15px;
+        color: rgb(22, 5, 5);
+        padding: 20px;
+    }
+    .search-box{
+        position: relative;
+    }
+
+    .search-box i{
+        position: absolute;
+        color: rgb(9, 6, 6);
+        font-size: 25px;
+        top: 25px;
+        right: 20px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center; 
+        margin-top: 200px;
+        font-size: 100px;
+        padding-right: 150px;
+        text-align: center;
+        font-weight: bold;
+        color: rgb(240, 235, 226);
+    }
+
+    .box{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-right: 120px;
+        gap: 10px;
+
+    }
+     
+
+    button{
+    color: aliceblue;
+    background-color: transparent ;
+    border: 2px solid white;
+      font-size: 25px;
+    }
+    
+    button:hover{
+      color: pink;
+    } 
+    </style>
+</head>
+<body>
+    <header>
+        <div class="icon">
+            <i class="fa-solid fa-face-smile"> SMILEY</i></div>
+
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">VLOGS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        
+       <div class="search-box">
+        <input type="search" placeholder="Type to Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+       </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="text">TRAVEL 4EVR</div>
+           </div>
+           <div class="box">
+            <button> WATCH VIDEO</button>
+            <button>LEARN MORE</button> 
+            </div>
+    </main>
+</body>
+</html>
