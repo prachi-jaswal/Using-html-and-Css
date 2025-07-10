@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+section{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    background-color: rgb(14, 9, 9);
+    overflow: hidden; 
+    border-radius: 30px;
+}
+.card{
+     color: rgb(240, 243, 245);
+   /*  position: relative; */
+     width: 200px;
+     margin: 1px; 
+}
+
+section::before{
+    content: "";
+    height: 400px;
+    width: 400px;
+   background-image: linear-gradient(rgb(148, 41, 148),blue,rgb(245, 245, 245));
+   position: absolute;
+   animation: rotate 2s infinite ease-in-out;
+}
+
+section::after{
+ content:"";
+ height: 390px;
+ width: 390px;
+ background-color: rgb(229, 235, 235);
+ position: absolute;
+ border-radius: 30px;
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+section .card{
+   color: rgb(21, 4, 4);
+   z-index: 100;
+}
+
+.fa-paintbrush{ 
+    display: flex;
+    justify-content: center;
+     height: 200px;
+    width: 200px; 
+    font-size: 80px; 
+  
+}
+
+.title{
+    position:absolute;
+    top: 160px;
+    left: 120px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.title:hover{
+    text-decoration: underline;
+    box-shadow: 0 0 5px;
+}
+
+.description{
+   margin:0px 2px;
+  font-size: 20px;
+    text-align: justify;
+    background-image: radial-gradient(rgb(240, 214, 218),rgb(232, 239, 238));
+}
+
+.description:hover{
+    box-shadow: 1px 2px 5px pink;
+}
