@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(241, 221, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div{
+   /* border: 3px solid rgb(14, 1, 1); */
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+  
+}
+
+div::before{
+    content: "";
+    height: 100px;
+    width:400px;
+    background-image: linear-gradient(rgb(22, 166, 137),rgb(198, 15, 46),yellow,purple);
+    position: absolute;
+    animation: rotate 2s infinite ease-in-out;
+}
+
+div::after{
+    content: "";
+    height: 290px;
+    width: 290px;
+    background-color: rgb(5, 15, 15);
+    position: absolute;
+    border-radius: 30px;
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(390deg);
+    }
+}
+
+div h2{
+    color: rgb(139, 223, 215);
+    z-index: 100;
+}
+
+
+
