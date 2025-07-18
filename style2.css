@@ -8,13 +8,15 @@ body{
     display: flex;
     justify-content: center;
     margin: 80px;
+    background-image: linear-gradient(rgb(41, 41, 184),rgb(50, 50, 178),rgb(44, 103, 213));
     
 }
 .container{
-    border: 2px solid rgb(37, 43, 95);
+    border: 2px solid rgb(65, 83, 241);
     height: 600px;
     width: 1000px;
-    background-image: linear-gradient(rgb(246, 246, 243));
+    background-image: linear-gradient(rgb(70, 55, 234),rgb(104, 104, 227));
+    
 }
 
 h1{
@@ -36,19 +38,19 @@ nav ul{
 
 ul li a{
     text-decoration: none;
-    color: black;
+    color:  rgb(194, 42, 211);
+    border:2px solid white;
+    background-color: aliceblue;
 }
-
-/*ul li a:hover{
-    
-}*/
 
 #sub{
     margin-right: 30px;
     font-size: x-large;
     padding: 5px;
-    border: 1px solid rgb(57, 116, 199);
+    border: 1px solid rgb(241, 172, 227);
     border-radius: 40px;
+      background-image: linear-gradient(pink,rgb(153, 202, 218));
+      color: rgb(149, 79, 159);
 }
 
 .main{
@@ -62,10 +64,11 @@ ul li a{
 
 
 .left span h1{
+      color: rgb(254, 250, 252);
     margin-top: 70px;
    text-align: left;
     font-size: 40px;
-}
+ }
 
 h3{
     display: flex;
@@ -73,18 +76,22 @@ h3{
    padding: 30px;
    margin-left: 40px; 
     font-size: 20px;
+    color: rgb(247, 210, 216);
     
 }
 
-button{
+.btn button{
     margin-left: 70px;
-    border: 2px solid black;
+    border: 2px solid rgb(235, 221, 221);
     font-size:20px;
     padding: 15px;
     border-radius: 50px;
+    background-image: linear-gradient(pink,rgb(94, 116, 206));
+    color: rgb(184, 51, 95);
+    
 
 }
- 
+
 .right img{
     position: relative;
     bottom: 450px;
@@ -92,6 +99,11 @@ button{
     padding-left: 600px;
 
 }
+
+
+
+ 
+
 
 
 
